@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "testrail": {
+      "command": "uv",
+      "args": ["--directory", "C:\\path\\to\\testrail-mcp", "run", "testrail-mcp"],
+      "env": {
+        "TESTRAIL_URL": "https://yourcompany.testrail.io",
+        "TESTRAIL_USER": "you@company.com",
+        "TESTRAIL_API_KEY": "your-api-key",
+        "TESTRAIL_PROJECT_ID": "1",
+        "TESTRAIL_SUITE_ID": "",
+        "TESTRAIL_SECTION_ID": "",
+        "TESTRAIL_DEFAULT_FIELDS": "{\"custom_automation_type\": \"Not Automated\"}"
+      }
+    }
+  }
+}

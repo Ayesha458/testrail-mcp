@@ -1,0 +1,26 @@
+[project]
+name = "testrail-mcp"
+version = "0.1.0"
+description = "MCP server that lets Claude upload test cases to TestRail. Credentials come only from environment variables."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+dependencies = ["mcp>=1.10"]
+keywords = ["mcp", "testrail", "claude", "qa", "test-cases"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+testrail-mcp = "testrail_mcp.server:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["testrail_mcp"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["tests"]
