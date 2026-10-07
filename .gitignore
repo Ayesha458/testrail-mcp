@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+
+# Never commit credentials or real configs
+.env
+.env.*
+claude_desktop_config.json
+!examples/claude_desktop_config.json
+
+# Case files may contain screenshots of your product
+*-cases.json
